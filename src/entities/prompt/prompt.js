@@ -1,5 +1,5 @@
 // Generic prompt object.
-export const makePrompt = ({ prompt }) => {
+export const buildMakePrompt = ({ prompt }) => {
     // If prompt not provided throw error.
     if(!prompt) throw new Error("Prompt must not be empty");
 
@@ -24,4 +24,4 @@ export const makePrompt = ({ prompt }) => {
     }
 }
 
-export default makePrompt;
+export default buildMakePrompt;
