@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "build": "npm run clean && babel src -d dist",
+    "build": "npm run clean && babel src -d dist --copy-files",
     "now-build": "npm run build",
     "clean": "rimraf dist",
     "dev": "nodemon --exec babel-node ./src/app.js",
@@ -17,7 +17,8 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.6",
-    "inquirer": "^8.1.1"
+    "inquirer": "^8.1.1",
+    "shelljs": "^0.8.4"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
